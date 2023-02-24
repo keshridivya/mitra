@@ -25,7 +25,7 @@ include('header.php');
                                 <div class="isotope-item col-lg-4 col-md-6 col-sm-12">
                                     <article
                                         class="post vertical-item content-padding big-padding with_border text-center">
-                                        <div class="item-media with_icon"> <img src="images/events/01.jpg" alt="">
+                                        <div class="item-media with_icon"><a href="blog-detail.php"> <img src="images/events/01.jpg" alt=""></a>
                                         <div class="post_icon"> <a href="blog-detail.php"><i class="fa fa-eye"></i> </a></div>
                                         </div>
                                         <div class="item-content">
@@ -52,7 +52,7 @@ include('header.php');
                                 <div class="isotope-item col-lg-4 col-md-6 col-sm-12">
                                     <article
                                         class="post vertical-item content-padding big-padding with_border text-center">
-                                        <div class="item-media with_icon"> <img src="images/events/03.jpg" alt="">
+                                        <div class="item-media with_icon"> <a href="blog-detail.php"><img src="images/events/03.jpg" alt=""></a>
                                         <div class="post_icon"> <a href="blog-detail.php"><i class="fa fa-eye"></i> </a></div>
                                         </div>
                                         <div class="item-content">
@@ -67,7 +67,7 @@ include('header.php');
                                 <div class="isotope-item col-lg-4 col-md-6 col-sm-12">
                                     <article
                                         class="post vertical-item content-padding big-padding with_border text-center">
-                                        <div class="item-media with_icon"> <img src="images/events/01.jpg" alt="">
+                                        <div class="item-media with_icon"><a href="blog-detail.php"> <img src="images/events/01.jpg" alt=""></a>
                                         <div class="post_icon"> <a href="blog-detail.php"><i class="fa fa-eye"></i> </a></div>
                                         </div>
                                         <div class="item-content">
@@ -82,7 +82,7 @@ include('header.php');
                                 <div class="isotope-item col-lg-4 col-md-6 col-sm-12">
                                     <article
                                         class="post vertical-item content-padding big-padding with_border text-center">
-                                        <div class="item-media with_icon"> <img src="images/events/04.jpg" alt="">
+                                        <div class="item-media with_icon"> <a href="blog-detail.php"><img src="images/events/04.jpg" alt=""></a>
                                         <div class="post_icon"> <a href="blog-detail.php"><i class="fa fa-eye"></i> </a></div>
                                         </div>
                                         <div class="item-content">
@@ -97,7 +97,7 @@ include('header.php');
                                 <div class="isotope-item col-lg-4 col-md-6 col-sm-12">
                                     <article
                                         class="post vertical-item content-padding big-padding with_border text-center">
-                                        <div class="item-media with_icon"> <img src="images/events/05.jpg" alt="">
+                                        <div class="item-media with_icon"><a href="blog-detail.php"> <img src="images/events/05.jpg" alt=""></a>
                                         <div class="post_icon"> <a href="blog-detail.php"><i class="fa fa-eye"></i> </a></div>
                                         </div>
                                         <div class="item-content">
@@ -112,7 +112,7 @@ include('header.php');
                                 <div class="isotope-item col-lg-4 col-md-6 col-sm-12">
                                     <article
                                         class="post vertical-item content-padding big-padding with_border text-center">
-                                        <div class="item-media with_icon"> <img src="images/events/06.jpg" alt="">
+                                        <div class="item-media with_icon"><a href="blog-detail.php"> <img src="images/events/06.jpg" alt=""></a>
                                         <div class="post_icon"> <a href="blog-detail.php"><i class="fa fa-eye"></i> </a></div>
                                         </div>
                                         <div class="item-content">

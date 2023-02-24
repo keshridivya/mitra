@@ -1,97 +1,144 @@
 ﻿<?php
 include('header.php');
 ?>
+<style>
+	/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
 
-<section class="intro_section page_mainslider ds">
-	<div class="flexslider vertical-nav" data-dots="true" data-nav="false">
-		<ul class="slides">
-			<li> <video loop autoplay="autoplay" muted id='vid'>
-					<source type="video/mp4" src="images/Comp 1 3.mp4">
-					<source src="images/Comp 1 3.ogg" type="video/ogg">
-				</video>
-				<div class="overlay">
+	/********************************/
+	/*       Fade Bs-carousel       */
+	/********************************/
+	.fade-carousel {
+		position: relative;
+	}
 
+	.fade-carousel .carousel-inner .item {
+		height: 100%;
+	}
+
+	.fade-carousel .carousel-indicators>li {
+		margin: 0 2px;
+		background-color: #f39c12;
+		border-color: #f39c12;
+		opacity: .7;
+	}
+
+	.fade-carousel .carousel-indicators>li.active {
+		width: 10px;
+		height: 10px;
+		opacity: 1;
+	}
+
+	/********************************/
+	/*          Hero Headers        */
+	/********************************/
+	.hero {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 99;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, .75);
+		-webkit-transform: translate3d(-50%, -50%, 0);
+		-moz-transform: translate3d(-50%, -50%, 0);
+		-ms-transform: translate3d(-50%, -50%, 0);
+		-o-transform: translate3d(-50%, -50%, 0);
+		transform: translate3d(-50%, -50%, 0);
+		width: 100%;
+	}
+
+	.fade-carousel .carousel-inner .item .hero {
+		opacity: 0;
+		-webkit-transition: 2s all ease-in-out .1s;
+		-moz-transition: 2s all ease-in-out .1s;
+		-ms-transition: 2s all ease-in-out .1s;
+		-o-transition: 2s all ease-in-out .1s;
+		transition: 2s all ease-in-out .1s;
+	}
+
+	.fade-carousel .carousel-inner .item.active .hero {
+		opacity: 1;
+		-webkit-transition: 2s all ease-in-out .1s;
+		-moz-transition: 2s all ease-in-out .1s;
+		-ms-transition: 2s all ease-in-out .1s;
+		-o-transition: 2s all ease-in-out .1s;
+		transition: 2s all ease-in-out .1s;
+	}
+
+	
+
+	.fade-carousel .slides .slide-1,
+	.fade-carousel .slides .slide-2,
+	.fade-carousel .slides .slide-3 {
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+</style>
+
+<section class="  ">
+
+
+	<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+		<!-- Overlay -->
+		
+
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#bs-carousel" data-slide-to="1"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item slides active">
+				<div class="slide-1">
+					<video loop autoplay="autoplay" muted id='vid'>
+						<source type="video/mp4" src="images/Comp 1 3.mp4">
+						<source src="images/Comp 1 3.ogg" type="video/ogg">
+					</video>
 				</div>
-
-				<div class="container" style='z-index:99'>
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="slide_description_wrapper text-center">
-								<div class="slide_description ">
-									<div class='banner_content'>
-										<h1>MITRA</h1>
-										<p style='text-transform:uppercase'>Offers specialised courses related to global
-											stock
-											market.</p>
-										<div style='margin-top:40px'><a href="courses.php" class='btn1 btn-yellow'>Join
-												Now</a>
-										</div>
-									</div>
-								</div>
-								<!-- eof .slide_description -->
-							</div>
-
-							<!-- eof .slide_description_wrapper -->
-						</div>
-						<!-- eof .col-* -->
-					</div>
-					<!-- eof .row -->
-				</div>
-				<!-- eof .container -->
-			</li>
-			<li> <img src="images/team/artboard.jpeg" alt="">
 				<div class="overlay"></div>
-				<div class="container" style='z-index:99'>
-					<div class="row">
-						<div class="col-sm-12 ">
-							<div class="slide_description_wrapper">
-								<div class="slide_description slider_fg">
-									<div class="intro-layer animated fadeInUp" data-animation="fadeInUp"
-										style="visibility: hidden;">
-										<h2 class="thin"> <span class="white" style='text-transform:uppercase;line-height:initial'>Mitra Global Market Education</span> </h2>
-									</div>
-									<div class="intro-layer animated fadeInUp" data-animation="fadeInUp"
-										style="visibility: hidden;"> <a href="contact.php"
-											class="theme_button color2 min_width_button">
-											Join us
-										</a> </div>
-								</div>
-								<!-- eof .slide_description -->
-							</div>
+				<div class="hero">
+					<div class='banner_content'>
+						<h1>Mitra's Global Market Education</h1>
+						<p style='text-transform:uppercase'>Offers specialised courses related to global
+							stock
+							market.</p>
+						<div style='margin-top:40px' class='slide_btn'><a href="courses.php"
+								class='btn1 btn-yellow'>Join
+								Now</a>
 						</div>
-						<!-- eof .col-* -->
 					</div>
-					<!-- eof .row -->
 				</div>
-				<!-- eof .container -->
-			</li>
-			<!-- <li> <img src="images/artboard1.jpg" alt="">
+			</div>
+			<div class="item slides ">
+				<div class="slide-2"><img src="images/team/artboard.jpeg" alt=""></div>
 				<div class="overlay"></div>
-				<div class="container" style='z-index:99'>
+				<div class="hero">
 					<div class="row">
-						<div class="col-sm-12">
-							<div class="slide_description_wrapper">
-								<div class="slide_description slider_fg">
-									<div class="intro-layer animated fadeInUp" data-animation="fadeInUp"
-										style="visibility: hidden;">
-										<h2 class="thin"> <span class="white">Advanced
-												Trader
-												Professional
-												Program </span> </h2>
-									</div>
-									<div class="intro-layer animated fadeInUp" data-animation="fadeInUp"
-										style="visibility: hidden;"> <a href="contact.php"
-											class="theme_button color2 min_width_button">
-											Contact us
-										</a> </div>
-								</div>
-							</div>
+						<div class="col-md-6 col-xs-12">
+						<div class='banner_content banner_content1'>
+						<h1>Our Professional Courses</h1>
+						<p class='bannerp' style='text-transform:uppercase'>BEGINNER'S STUDENT PROFESSIONAL
+PROGRAM & ADVANCED TRADER PROFESSIONAL
+PROGRAM</p>
+						<div style='margin-top:40px' class='slide_btn'><a href="courses.php"
+								class='btn1 btn-yellow'>Join
+								Now</a>
+						</div>
+					</div>
 						</div>
 					</div>
 				</div>
-			</li> -->
-		</ul>
+			</div>
 
+		</div>
 	</div>
 	<!-- eof flexslider -->
 </section>
@@ -130,9 +177,9 @@ include('header.php');
 		<div class="row">
 			<div class="col-xs-12 col-md-7  aboutcontent">
 				<p class="small-text highlight">What is Mitra</p>
-				<h2 class="section_header1 text-white">ABOUT MITRA INVESTMENT SERVICES
+				<h2 class="section_header1 text-white">ABOUT Mitra's INVESTMENT SERVICES
 				</h2>
-				<p class='text-white'>The Mitra Investment services consists of 2 professionally managed business arms
+				<p class='text-white'>The Mitra's Investment services consists of 2 professionally managed business arms
 					viz.</p>
 				<ul style='padding-left:0;margin-top:20px;'>
 					<li class='text-white'><i class='fa fa-angle-double-right'></i> &nbsp; Deals in researched & sound
@@ -247,7 +294,7 @@ include('header.php');
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8 col-xs-12">
-				<h2 class='text-white'>Achieve Your dream with Mitra</h2>
+				<h2 class='text-white'>Achieve Your dream with Mitra's</h2>
 			</div>
 			<div class="col-sm-4 col-xs-12">
 				<h2 class='float_right'><a href="courses.php" class='btn1 btn-yellow'>Explore Now</a></h2>
@@ -355,11 +402,11 @@ include('header.php');
 					<blockquote class="text-center">
 						<div class="item-meta topmargin_0">
 							<div class="avatar"> <img src="images/image-033.jpg" alt=""> </div>
-							<h2 class="section_header margin_0"> <span class="small-text highlight">Aashish Thapkir</h2>
+							<h2 class="section_header margin_0"> <span class="small-text highlight">Nikesh Dudhe</h2>
 							<!-- <div class="star-rating" title="Rated 4.0 out of 5"> <span style="width:80%">
 									<strong class="rating">4.0</strong> out of 5
 								</span> </div> -->
-						</div> Hi,myself Aashish thapkir and i joined Mitra's on april 2022 and currently i am earning
+						</div> Hi,myself Nikesh Dudhe and i joined Mitra's on april 2022 and currently i am earning
 						70k to 75k
 						per month, so thanks to Mitra and team for supporting me in my career.
 					</blockquote>
@@ -370,19 +417,48 @@ include('header.php');
 					data-nav="false" data-dots="true">
 					<blockquote class="text-center">
 						<div class="item-meta topmargin_0">
-							<div class="avatar"> <video width="320" height="240" controls>
+							<div class=""> <video width="320" height="300" controls>
 									<source src="images/aashish.mp4" type="video/mp4">
 									<source src="images/aashish.ogg" type="video/ogg">
 									Your browser does not support the video tag.
 								</video> </div>
-							<h2 class="section_header margin_0"> <span class="small-text highlight">Aashish
+							<h2 class="section_header margin_0" style='padding-top:20px'> <span class="small-text highlight">Aashish
 									Thapkir</span></h2>
 							<!-- <div class="star-rating" title="Rated 4.0 out of 5"> <span style="width:80%">
 									<strong class="rating">4.0</strong> out of 5
 								</span> </div> -->
 						</div> Hi,myself Aashish thapkir and i joined Mitra's on april 2022 and currently i am earning
 						70k to 75k
-						per month, so thanks to Mitra and team for supporting me in my career.
+						per month, so thanks to Mitra's and team for supporting me in my career.
+					</blockquote>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="testimonials" class="ls section_padding_top_100 section_padding_bottom_10" data-aos="fade-up">
+
+	<div class="container">
+		<h2 class="section_header text-center"> Rewards and Recognitions
+		</h2>
+		<div class="row">
+			<div class="col-sm-12  padding section_padding_bottom_100">
+				<div class="owl-carousel caroudl1" data-responsive-lg="1" data-responsive-md="1" data-responsive-xs="1"
+					data-nav="false" data-dots="true">
+					<blockquote class="text-center">
+						<div class="item-meta topmargin_0">
+							<div class=""> <video width="320" height="300" controls>
+									<source src="images/team/reward_video.mp4" type="video/mp4">
+									<source src="images/team/reward_video.ogg" type="video/ogg">
+									Your browser does not support the video tag.
+								</video> </div>
+							<h2 class="section_header margin_0" style='padding-top:20px'> <span class="small-text highlight">Aashish
+									Thapkir</span></h2>
+							<!-- <div class="star-rating" title="Rated 4.0 out of 5"> <span style="width:80%">
+									<strong class="rating">4.0</strong> out of 5
+								</span> </div> -->
+						</div>
 					</blockquote>
 				</div>
 			</div>
@@ -400,7 +476,7 @@ include('header.php');
 
 				<div class="owl-carousel owl-carosel1 text-nav" data-responsive-lg="3" data-nav="true" data-margin="30">
 					<article class="post vertical-item content-padding big-padding with_border text-center">
-						<div class="item-media with_icon"> <img src="images/events/05.jpg" alt="">
+						<div class="item-media with_icon"> <a href="blog-detail.php"><img src="images/events/05.jpg" alt=""></a>
 							<div class="post_icon"> <a href="blog-detail.php"><i class="fa fa-eye"></i> </a></div>
 						</div>
 						<div class="item-content">
@@ -412,7 +488,7 @@ include('header.php');
 
 					</article>
 					<article class="post vertical-item content-padding big-padding with_border text-center">
-						<div class="item-media with_icon"> <img src="images/events/05.jpg" alt="">
+						<div class="item-media with_icon"> <a href="blog-detail.php"><img src="images/events/05.jpg" alt=""></a>
 							<div class="post_icon"> <a href="blog-detail.php"><i class="fa fa-eye"></i> </a></div>
 						</div>
 						<div class="item-content">
@@ -436,7 +512,7 @@ include('header.php');
 						</footer> -->
 					</article>
 					<article class="post vertical-item content-padding big-padding with_border text-center">
-						<div class="item-media with_icon"> <img src="images/events/05.jpg" alt="">
+						<div class="item-media with_icon"> <a href="blog-detail.php"><img src="images/events/05.jpg" alt=""></a>
 							<div class="post_icon"> <a href="blog-detail.php"><i class="fa fa-eye"></i> </a></div>
 						</div>
 						<div class="item-content">

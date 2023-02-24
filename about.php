@@ -23,7 +23,7 @@ include('header.php');
                 <p class="small-text highlight">Welcome to Mitra</p>
                 <h2 class="section_header ">What do we do?
                 </h2>
-                <p class=''>Mitra Global Market Education offers specialised courses in Global Stock Markets investment.
+                <p class=''>Mitra's Global Market Education offers specialised courses in Global Stock Markets investment.
                     Each course curriculum is aptly designed with an intent to create a dominant repository of the tools
                     and techniques required to understand the working of Global Capital Markets, primarily in the US, UK
                     India and Europe.</p>
@@ -40,16 +40,16 @@ include('header.php');
     <div class="container">
         <div class="row justify-content-center mb-5 pb-2 text-center">
             <h2 class="section_header ">Who we are ?</h2>
-            <p>The Mitra Ecosystem consists of 2 professionally managed business arms viz. Mitra Global Market
-                Consultancy and Mitra Global Market Education.</p>
+            <p>The Mitra's's Ecosystem consists of 2 professionally managed business arms viz. Mitra's Global Market
+                Consultancy and Mitra's Global Market Education.</p>
             <p>
-                <b>Mitra Global Market Consultancy</b> offers well researched and sound advice to investors keen to
+                <b>Mitra's Global Market Consultancy</b> offers well researched and sound advice to investors keen to
                 invest in the international financial Markets. Our team of experienced and knowledgeable expert
                 provides investment solutions which aim at reducing the potential risk of loss and fetch maximum
                 possible returns.
             </p>
             <p>
-                <b>Mitra Global Market Education </b>is a provider of specialised courses in the domain of Global
+                <b>Mitra's Global Market Education </b>is a provider of specialised courses in the domain of Global
                 Stock Markets.The aim of these courses is to equip individuals to confidently trade in the Global
                 Financial Markets and successfully reap rich returns.
             </p>

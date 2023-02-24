@@ -3,7 +3,7 @@
 <html class="no-js">
 
 <head>
-    <title>Mitra</title>
+    <title>Mitra Education</title>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +35,7 @@ body {
     font-size: 36px;
     position: relative;
     word-wrap: break-word;
-    line-height: .85;
+    line-height: .99;
     font-weight: 600;
     text-transform: uppercase;
     font-family:"Gilroy bold",sans-serif;
@@ -46,7 +46,7 @@ body {
 
 <body>
     <div class="preloader">
-        <div class="preloader_image"></div>
+        <div class="preloader_image"><img src='images/team/mytira_GIF.gif'></div>
     </div>
     <!-- wrappers for visual page editor and boxed version of template -->
     <div id="canvas">

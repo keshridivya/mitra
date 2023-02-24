@@ -1721,7 +1721,7 @@ left: 0;
 height: 100%;
 width: 100%;
 background:#043c74;
-opacity: 0.5;
+opacity: 0.7;
 z-index: 99;
 }
 h1,
@@ -1736,6 +1736,10 @@ h6 {
     margin-top: 1.1em;
     margin-bottom: .8em;
     position: relative
+}
+.banner_content1{
+    text-align: left;
+    padding-left: 15px;
 }
 
 h1>.number,
@@ -5097,7 +5101,7 @@ h5+.section_header {
     position: absolute;
     left: 50%;
     top: 50%;
-    background: url(../img/preloader.svg) no-repeat 50% 50% transparent;
+    /* background: url(../images/team/mytira_GIF.gif) no-repeat 50% 50% transparent; */
     margin: -50px 0 0 -50px
 }
 
@@ -7353,11 +7357,12 @@ body.boxed {
 }
 .coursespb2 {
     position: absolute;
-    margin-top: -22rem;
-    text-align: center;
+    margin-top: -27rem;
+    text-align: left;
     font-weight: 600;
     margin-left: 1em;
     width: 200px;
+    font-size: 28px;
 }
 .coursespb2 button {
     background: linear-gradient(90deg, rgba(19,83,245,1) 29%, rgba(19,209,245,1) 76%);
@@ -7371,11 +7376,25 @@ body.boxed {
     color: #fff;
     text-transform: uppercase;
 }
-@media (max-width:600px){
+@media (max-width:1200px){
+    .coursespb2 {
+        margin-top: -24rem;
+        font-size: 22px;
+    }
+
+}
+@media (max-width:992px){
+    .coursespb2 {
+        margin-top: -34rem;
+        font-size: 31px;
+    }
+
+}
+@media (max-width:768px){
     .coursespb2 {
         position: absolute;
-        margin-top: -15em;
-        text-align: center;
+        margin-top: -17em;
+        text-align: left;
         font-weight: 400 !important;
         font-size: 13px;
         width: 46%;
@@ -7384,10 +7403,29 @@ body.boxed {
         font-size: 11px;
     }
 }
+@media (max-width:460px){
+    .coursespb2 {
+        margin-top: -21rem;
+    }
+
+}
 @media (max-width:370px){
     .coursespb2 {
-        margin-top: -12em;
+        margin-top: -19em;
+        font-size: 10px;
     }
+    .fontsize{
+        padding-right: 35px;
+    }
+}
+.cont{
+    /* padding-bottom: 10px !important; */
+}
+.copyright{
+background-color: #097dcc;
+opacity: 0.3;
+color:white;
+z-index: 99;
 }
 #search_modal .searchform-respond {
     width: 300px;
@@ -10811,7 +10849,7 @@ li.product:nth-child(3n+3) .theme_button.round_button:active {
     }
 
     .intro_section .slide_description {
-        padding: 30px 0;
+        padding: 20px 0 0 0;
         display: block;
         margin: auto;
         text-align: center
@@ -16008,6 +16046,10 @@ a.color-icon.border-icon:hover {
 .float_right{
     float:right;
 }
+.bannerp{
+    font-size: 45px;
+    line-height: 56px;
+}
 /* @media(min-width:1200px){
     #vid{
         height:auto ;
@@ -16020,12 +16062,13 @@ a.color-icon.border-icon:hover {
     }
 } */
 @media (max-width:992px){
-    /* #vid{
-        height:590px;
-    } */
-    /* .banner_content {
-        padding-top: 150px;
-    } */
+    .intro_section h2 {
+        margin-bottom: 0.25em;
+    }
+    .bannerp{
+        font-size: 45px;
+        line-height: 28px;
+    }
 }
 @media(max-width:768px){
     /* #vid{
@@ -16053,15 +16096,36 @@ a.color-icon.border-icon:hover {
     /* .banner_content {
         padding-top: 54px;
     } */
+    .carousel-indicators {
+        bottom: -15px;
+    }
     .banner_content h1 {
-        font-size: 42px;
+        font-size: 22px;
         margin-bottom: 15px;
     }
     .banner_content p {
         font-size: 20px;
+        padding: 0 10px;
     }
     .float_right{
         float:left;
+    }
+    .intro_section h2 {
+        font-size: 42px;
+        margin-bottom: 0.25em;
+    }
+    p{
+        font-size: 20px;
+    }
+    .section_header {
+        font-size: 23px !important;
+        margin-bottom: 30px !important;
+    }
+    .section_header1 {
+        font-size: 23px !important;
+    }
+    .small-text {
+        font-size: 14px !important;
     }
 }
 @media(max-width:460px){
@@ -16070,19 +16134,29 @@ a.color-icon.border-icon:hover {
         padding-top: 46px;
     } */
     .banner_content h1 {
-        font-size: 34px;
+        font-size: 20px;
         margin-bottom: 10px;
     }
     .banner_content p {
-        font-size: 16px;
+        font-size: 14px;
     }
     .btn1 {
-        padding: 10px 20px;
-        font-size: 18px;
+        padding: 8px 20px;
+        font-size: 15px;
     }
-    .banner_content div {
-        margin-top: 23px !important;
-        font-size: 18px;
+    .slide_btn{
+        margin-top: 16px !important;
+        font-size: 15px;
+    }
+    .intro_section h2 {
+        font-size: 34px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .careerimage img {
+        height: 200px;
+        width: 100%;
     }
     
 }
@@ -16092,20 +16166,55 @@ a.color-icon.border-icon:hover {
         padding-top: 28px;
     } */
     .banner_content h1 {
-        font-size: 30px;
+        font-size: 20px;
         margin-bottom: 5px;
     }
     .banner_content p {
-        font-size: 14px;
+        font-size: 12px;
         margin-bottom: 8px;
     }
     .btn1 {
         padding: 8px 20px;
         font-size: 15px;
     }
-    .banner_content div {
+    .intro_section h2 {
+        font-size: 30px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .slide_btn{
         margin-top: 5px !important;
         font-size: 15px;
+
     }
 }
+@media(max-width:350px){
+
+        .banner_content h1 {
+            font-size: 18px;
+            margin-bottom: 3px;
+        }
+        .banner_content p {
+            font-size: 10px;
+            margin-bottom: 5px;
+            line-height: 15px;
+        }
+        .btn1 {
+            padding: 8px 20px;
+            font-size: 12px;
+        }
+        .intro_section h2 {
+            font-size: 30px;
+        }
+        p{
+            font-size: 14px;
+        }
+        .slide_btn{
+            margin-top: 5px !important;
+            font-size: 15px;
+    
+        }
+    }
+
 

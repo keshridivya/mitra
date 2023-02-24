@@ -764,9 +764,9 @@
 				var dots = (data.dots !== 'undefined') ? data.dots : true;
 
 				$currentSlider.flexslider({
-						animation: "fade",
+						animation: "slide",
 						pauseOnHover: true,
-						useCSS: true,
+						useCSS: false,
 						controlNav: dots,
 						directionNav: nav,
 						prevText: "",
@@ -835,7 +835,7 @@
 						nextText: "",
 						smoothHeight: false,
 						slideshow: autoplay,
-						slideshowSpeed: 2000,
+						slideshowSpeed: 5000,
 						animationSpeed: 400,
 						start: function (slider) {
 							slider.find('.flex-control-nav').find('a').each(function () {

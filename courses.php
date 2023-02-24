@@ -103,8 +103,8 @@ include('header.php');
                                         <img src='images/team/course1.png'>
                                     </div>
                                     <div class="col-xs-6 courseimg ">
-                                        <p class=' text-black'><del><i class="fa fa-rupee"></i> 130000</del></p>
-                                        <p><i class="fa fa-rupee"></i> 150000</p>
+                                        <p class=' text-black'><del><i class="fa fa-rupee"></i> 130000/-</del></p>
+                                        <p><i class="fa fa-rupee"></i> 150000/-</p>
                                         <button>View More</button>
                                     </div>
                                 </div>
@@ -150,8 +150,8 @@ include('header.php');
                                         <img src='images/team/course2.png'>
                                     </div>
                                     <div class="col-xs-6 courseimg ">
-                                        <p class=' text-black'><del><i class="fa fa-rupee"></i> 700000</del></p>
-                                        <p><i class="fa fa-rupee"></i> 250000</p>
+                                        <p class=' text-black'><del><i class="fa fa-rupee"></i> 700000/-</del></p>
+                                        <p><i class="fa fa-rupee"></i> 250000/-</p>
                                         <button>View More</button>
                                     </div>
                                 </div>
@@ -216,8 +216,8 @@ include('header.php');
                     <img src='images/team/about1.png'> </div>
             </div> -->
         </div>
-        <div class='courselist1 row'>
-            <div class="col-sm-6" data-aos="fade-right">
+        <div class='courselist1 row justify-content-center'>
+            <div class="col-md-6" data-aos="fade-right">
                 <div class=''>
                     <p>Learn - Scalping, Intraday, Swing & Positional Trading</p>
                 </div>
@@ -234,11 +234,11 @@ include('header.php');
                     <p>Personal assessment & trade management curriculum</p>
                 </div>
                 <div class=''>
-                    <p>Learn from masters with 14 years experience with successful track record</p>
+                    <p style='padding:0 20px'>Learn from masters with 14 years experience with successful track record</p>
                 </div>
             </div>
             <div class="col-md-6" data-aos="fade-left">
-                <img src='img/parallax/11zon_cropped.png'> </div>
+                <img src='images/team/333cropped1.png'> </div>
         </div>
 
     </div>
@@ -265,7 +265,7 @@ include('header.php');
 	</div>
 </section>
 
-<section id="about" class="section_padding_top_100 section_padding_bottom_100 columns_padding_25 coursepad"  data-aos="fade-up">
+<section id="about" class="section_padding_top_10 section_padding_bottom_100 columns_padding_25 coursepad"  data-aos="fade-up">
     <div class="container">
         <div class="row justify-content-center mb-5 pb-2 text-center">
             <h2 class="section_header ">Courses Gallery</h2>
@@ -273,15 +273,15 @@ include('header.php');
         <div class='courselist1 row'>
             <div class="col-sm-6 col-md-4">
                 <img src='images/team/gallery1.jpeg'> </div>
-                <div class="col-md-6 col-md-4">
+                <div class="col-sm-6 col-md-4">
             <img src='images/team/gallery2.jpeg'> </div>
             <!-- <div class="col-md-6 col-md-4">
             <img src='images/team/gallery3.jpeg'> </div> -->
-            <div class="col-md-6 col-md-4">
+            <div class="col-sm-6 col-md-4">
             <img src='images/team/gallery4.jpeg'> </div>
-            <div class="col-md-6 col-md-4">
+            <div class="col-sm-6 col-md-4">
             <img src='images/team/gallery5.jpeg'> </div>
-            <div class="col-md-6 col-md-4">
+            <div class="col-sm-6 col-md-4">
             <img src='images/team/gallery6.jpeg'> </div>
         </div>
         
