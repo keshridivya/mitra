@@ -70,7 +70,7 @@ Image credits: unsplash.com
 		transition: 2s all ease-in-out .1s;
 	}
 
-	
+
 
 	.fade-carousel .slides .slide-1,
 	.fade-carousel .slides .slide-2,
@@ -86,7 +86,7 @@ Image credits: unsplash.com
 
 	<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
 		<!-- Overlay -->
-		
+
 
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
@@ -123,16 +123,16 @@ Image credits: unsplash.com
 				<div class="hero">
 					<div class="row">
 						<div class="col-md-6 col-xs-12">
-						<div class='banner_content banner_content1'>
-						<h1>Our Professional Courses</h1>
-						<p class='bannerp' style='text-transform:uppercase'>BEGINNER'S STUDENT PROFESSIONAL
-PROGRAM & ADVANCED TRADER PROFESSIONAL
-PROGRAM</p>
-						<div style='margin-top:40px' class='slide_btn'><a href="courses.php"
-								class='btn1 btn-yellow'>Join
-								Now</a>
-						</div>
-					</div>
+							<div class='banner_content banner_content1'>
+								<h1>Our Professional Courses</h1>
+								<p class='bannerp' style='text-transform:uppercase'>BEGINNER'S STUDENT PROFESSIONAL
+									PROGRAM & ADVANCED TRADER PROFESSIONAL
+									PROGRAM</p>
+								<div style='margin-top:40px' class='slide_btn'><a href="courses.php"
+										class='btn1 btn-yellow'>Join
+										Now</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -417,13 +417,18 @@ PROGRAM</p>
 					data-nav="false" data-dots="true">
 					<blockquote class="text-center">
 						<div class="item-meta topmargin_0">
-							<div class=""> <video width="320" height="300" controls>
+							<div class=""> <video style='width:100%' height="300" >
 									<source src="images/aashish.mp4" type="video/mp4">
 									<source src="images/aashish.ogg" type="video/ogg">
 									Your browser does not support the video tag.
 								</video> </div>
-							<h2 class="section_header margin_0" style='padding-top:20px'> <span class="small-text highlight">Aashish
+							<h2 class="section_header margin_0" style='padding-top:20px'> <span
+									class="small-text highlight">Aashish
 									Thapkir</span></h2>
+									<a type="button" class="waich_video waich_video1" data-toggle="modal"
+									data-target="#exampleModal">
+									<i class='fa fa-caret-right'></i>
+</a>
 							<!-- <div class="star-rating" title="Rated 4.0 out of 5"> <span style="width:80%">
 									<strong class="rating">4.0</strong> out of 5
 								</span> </div> -->
@@ -448,16 +453,23 @@ PROGRAM</p>
 					data-nav="false" data-dots="true">
 					<blockquote class="text-center">
 						<div class="item-meta topmargin_0">
-							<div class=""> <video width="320" height="300" controls>
+							<div id="fade_close" onClick="lightbox_close();"></div>
+							<div class=""> <video style='width:100%' height="300" class='rewards'>
 									<source src="images/team/reward_video.mp4" type="video/mp4">
 									<source src="images/team/reward_video.ogg" type="video/ogg">
 									Your browser does not support the video tag.
 								</video> </div>
-							<h2 class="section_header margin_0" style='padding-top:20px'> <span class="small-text highlight">Aashish
+							<h2 class="section_header margin_0" style='padding-top:20px'> <span
+									class="small-text highlight">Aashish
 									Thapkir</span></h2>
-							<!-- <div class="star-rating" title="Rated 4.0 out of 5"> <span style="width:80%">
-									<strong class="rating">4.0</strong> out of 5
-								</span> </div> -->
+
+							<div>
+								<a type="button" class="waich_video" data-toggle="modal"
+									data-target="#exampleModal">
+									<i class='fa fa-caret-right'></i>
+</a>
+								<!-- <a onclick="lightbox_open();" class='waich_video'></a> -->
+							</div>
 						</div>
 					</blockquote>
 				</div>
@@ -476,7 +488,8 @@ PROGRAM</p>
 
 				<div class="owl-carousel owl-carosel1 text-nav" data-responsive-lg="3" data-nav="true" data-margin="30">
 					<article class="post vertical-item content-padding big-padding with_border text-center">
-						<div class="item-media with_icon"> <a href="blog-detail.php"><img src="images/events/05.jpg" alt=""></a>
+						<div class="item-media with_icon"> <a href="blog-detail.php"><img src="images/events/05.jpg"
+									alt=""></a>
 							<div class="post_icon"> <a href="blog-detail.php"><i class="fa fa-eye"></i> </a></div>
 						</div>
 						<div class="item-content">
@@ -488,7 +501,8 @@ PROGRAM</p>
 
 					</article>
 					<article class="post vertical-item content-padding big-padding with_border text-center">
-						<div class="item-media with_icon"> <a href="blog-detail.php"><img src="images/events/05.jpg" alt=""></a>
+						<div class="item-media with_icon"> <a href="blog-detail.php"><img src="images/events/05.jpg"
+									alt=""></a>
 							<div class="post_icon"> <a href="blog-detail.php"><i class="fa fa-eye"></i> </a></div>
 						</div>
 						<div class="item-content">
@@ -512,7 +526,8 @@ PROGRAM</p>
 						</footer> -->
 					</article>
 					<article class="post vertical-item content-padding big-padding with_border text-center">
-						<div class="item-media with_icon"> <a href="blog-detail.php"><img src="images/events/05.jpg" alt=""></a>
+						<div class="item-media with_icon"> <a href="blog-detail.php"><img src="images/events/05.jpg"
+									alt=""></a>
 							<div class="post_icon"> <a href="blog-detail.php"><i class="fa fa-eye"></i> </a></div>
 						</div>
 						<div class="item-content">
@@ -542,5 +557,31 @@ PROGRAM</p>
 		</div>
 	</div>
 </section>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content content_modal">
+			<div class="modal-header">
+				<button type="button" class="close boxclose" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<div id="light_box">
+					<!-- <a class="" id="boxclose" onclick="lightbox_close();"></a> -->
+					<video id="VisaChipCardVideo" width="" controls autoplay>
+						<source src="images/team/reward_video.mp4" type="video/mp4">
+						<source src="images/team/reward_video.ogg" type="video/ogg">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+			<!-- <div class="">
+				
+			</div> -->
+
+		</div>
+	</div>
+</div>
 
 <?php include('footer.php') ?>

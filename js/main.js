@@ -1072,7 +1072,20 @@
 			margin: 10,
 			autoplay: true,
 			autoplayTimeout: 3000,
-			autoplayHoverPause: true
+			autoplayHoverPause: true,
+			responsive : {
+				// breakpoint from 0 up
+				0:{
+					items:1,
+				},
+				600:{
+					items:2,
+				},
+				800:{
+					items:3,
+					loop:false
+				}
+			}
 		});
 		$('.play').on('click', function () {
 			owl1.trigger('play.owl.autoplay', [6000])
@@ -1499,3 +1512,5 @@ $("#contact-form").validate({
 	  });
 	}
   });
+
+  

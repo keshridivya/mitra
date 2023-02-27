@@ -45,8 +45,7 @@ include('header.php');
             <div class="col-sm-4 to_animate" data-animation="pullDown">
                 <div class="teaser text-center">
                     <div class="teaser_icon highlight size_small"> <i class="fa fa-envelope"></i> </div>
-                    <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                            data-cfemail="4e262f3d262d2127200e2b362f233e222b602d2123"><span class="grey">Email: </span>info@mitraeducation.com</a>
+                    <p><a href="" class="__cf_email__" style='color:black'><span class="grey">Email: </span>info@mitraeducation.com</a>
                     </p>
                     <!-- <p> <a href="#" class="social-icon color-icon soc-twitter"></a> <a href="#"
                             class="social-icon color-icon soc-facebook"></a> <a href="#"
